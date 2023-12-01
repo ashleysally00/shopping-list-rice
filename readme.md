@@ -1,3 +1,3 @@
 # Shopping List
 
-Simple shopping list from Traversy course.
+Simple shopping list app from Traversy course.
