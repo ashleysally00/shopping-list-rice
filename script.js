@@ -170,15 +170,15 @@ function filterItems(e) {
 }
 
 function checkUI() {
-  input.value = "";
+  itemInput.value = "";
 
   const items = itemList.querySelectorAll("li");
   if (items.length === 0) {
     clearBtn.style.display = "none";
-    itemFilter.Filter.style.display = "none";
+    itemFilter.style.display = "none";
   } else {
     clearBtn.style.display = "block";
-    itemFilter.Filter.style.display = "block";
+    itemFilter.style.display = "block";
   }
 
   formBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Add Item';
@@ -195,10 +195,8 @@ function init() {
   itemList.addEventListener("click", onClickItem);
   clearBtn.addEventListener("click", clearItems);
   itemFilter.addEventListener("click", filterItems);
-  document.addEventListener("DOMContentLoaded");
+  document.addEventListener("DOMContentLoaded", displayItems);
   displayItems();
   checkUI();
 }
 init();
-
-f;
